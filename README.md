@@ -40,19 +40,6 @@ on testing(unit/UI) feasible parts.
 
 ## Architecture
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability.
 It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different layers namely:
 
@@ -64,15 +51,19 @@ It enforces separation of concerns and dependency inversion, where higher and lo
 ### Data Layer
 The data layer contains application data and business logic. The business logic is what gives value to your app—it's made of real-world business rules that determine how application data must be created, stored, and changed.
 
+
 #### Remote layer
 The remote later relies on Retrofit library to fetch data from the API.  The remote layer contains its own data class called ArticleResult. 
+
+#### Paging Source
+This helps load data from a data source into a snapshot of pages.
 
 #### Repository
 My repository was used to expose data to the rest of the application and also reolving conflicts. Helped in Abstracting sources of data from the rest of the app.
 
 
 ### Presentation
-The UI/Presentation layer is the pipeline that converts application data-changes to a form that the UI can present and then displays it. I used a  pattern where state of the application flows down and events flow up called `Unidirectional data flow`. Here the view model holds and exposes the state in an observable data holder called `Stateflow`. This ensures quick retoration of state after configuration changes. Alos the UI can react to any changes made in the state without having to manually pull data directly from the ViewModel.
+The UI/Presentation layer is the pipeline that converts application data-changes to a form that the UI can present and then displays it. I used a  pattern where state of the application flows down and events flow up called `Unidirectional data flow`. Here the view model holds and exposes the state in an observable data holder called `LiveDaata`. This ensures quick retoration of state after configuration changes. Also the UI can react to any changes made in the state without having to manually pull data directly from the ViewModel.
 
 The UI notifies the ViewModel of user events and data requests.
 The ViewModel handles the actions and updates the state.

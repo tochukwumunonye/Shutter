@@ -63,7 +63,7 @@ My repository was used to expose data to the rest of the application and also re
 
 
 ### Presentation
-The UI/Presentation layer is the pipeline that converts application data-changes to a form that the UI can present and then displays it. I used a  pattern where state of the application flows down and events flow up called `Unidirectional data flow`. Here the view model holds and exposes the state in an observable data holder called `LiveDaata`. This ensures quick retoration of state after configuration changes. Also the UI can react to any changes made in the state without having to manually pull data directly from the ViewModel.
+The UI/Presentation layer is the pipeline that converts application data-changes to a form that the UI can present and then displays it. I used a  pattern where state of the application flows down and events flow up called `Unidirectional data flow`. Here the view model holds and exposes the state in an observable data holder called `LiveData`. This ensures quick retoration of state after configuration changes. Also the UI can react to any changes made in the state without having to manually pull data directly from the ViewModel.
 
 The UI notifies the ViewModel of user events and data requests.
 The ViewModel handles the actions and updates the state.

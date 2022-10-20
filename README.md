@@ -53,10 +53,10 @@ The data layer contains application data and business logic. The business logic 
 
 
 #### Remote layer
-The remote later relies on Retrofit library to fetch data from the API.  The remote layer contains its own data class called ArticleResult. 
+The remote later relies on Retrofit library to fetch data from the API. . 
 
 #### Paging Source
-This helps load data from a data source into a snapshot of pages.
+This helps load data from a data source into a snapshot of pages. Ensuring that your app uses network bandwidth and system resources efficiently.
 
 #### Repository
 My repository was used to expose data to the rest of the application and also reolving conflicts. Helped in Abstracting sources of data from the rest of the app.

@@ -74,7 +74,7 @@ The above is repeated for any event that causes a mutation of state.
 ## Testing
 Testing is done with Junit4 testing framework for assertions and Mockito for mocking classes. Each  layer has its own test. 
 Viewmodel tests verify that each call to repository produces the correct view state.
-Repository Test verify each interaction with server returns the expected result.
+PagingSource Test verify each interaction with server returns the expected result.
 
 
 ## Improvement

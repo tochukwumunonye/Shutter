@@ -79,7 +79,6 @@ Repository Test verify each interaction with server returns the expected result.
 
 ## Improvement
 - App should be made to operate offline first because network availability is not always guaranteed
--  I feel Paging Library should be used for pagination to allow the app use both network bandwidth and system resources more efficiently
 -  I also will be grateful to hear your feedback/criticism so I can improve and make better decisions next time.
 
 
